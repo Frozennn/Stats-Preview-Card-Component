@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-container {
+  margin: 2.5rem 1rem 2rem 1rem;
+  background-color: rgb(27, 25, 56);
+}
+
+.wrapper {
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  height: 30vh;
+  background-image: linear-gradient(
+      rgba(170, 92, 219, 0.6),
+      rgba(170, 92, 219, 0.6)
+    ),
+    url(images/image-header-mobile.jpg);
+  background-size: cover;
+}
+
+.heading-span {
+  color: rgb(170, 92, 219);
+}
+
+.main-text {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.ul-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.big-font {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 750px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-text {
+    text-align: left;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .img-container {
+    width: 100%;
+    order: 2;
+    height: 37vh;
+  }
+
+  .ul-info {
+    flex-direction: row;
+    text-align: left;
+    align-self: flex-start;
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  li:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
